@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parking NS — pay for street parking in Novi Sad by SMS</title>
+<meta name="description" content="Android app for Novi Sad street parking. Pick your zone, confirm your saved license plate, and send the parking SMS in one tap.">
+<link rel="canonical" href="https://USERNAME.github.io/parkingns/">
+<meta name="theme-color" content="#0d63e8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Parking NS — pay for street parking in Novi Sad by SMS">
+<meta property="og:description" content="Pick your zone, confirm your saved license plate, send the parking SMS. Free on Google Play.">
+<meta property="og:image" content="assets/icon.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root {
+    --color-accent: #0d63e8;
+    --color-accent-100: #eaf1fe;
+    --color-accent-200: #cfe0fd;
+    --color-accent-300: #a6c6fb;
+    --color-accent-400: #6ba2f5;
+    --color-accent-500: #3a82ef;
+    --color-accent-600: #0b57cc;
+    --color-accent-700: #0b4fb8;
+    --color-accent-800: #0a3c8a;
+    --color-accent-900: #08295e;
+    --color-accent-2: #0d63e8;
+    --color-accent-2-100: #eaf1fe;
+    --color-accent-2-200: #cfe0fd;
+    --color-accent-2-300: #a6c6fb;
+    --color-accent-2-400: #6ba2f5;
+    --color-accent-2-500: #3a82ef;
+    --color-accent-2-600: #0b57cc;
+    --color-accent-2-700: #0b4fb8;
+    --color-accent-2-800: #0a3c8a;
+    --color-accent-2-900: #08295e;
+  }
+  body {
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    background:
+      linear-gradient(var(--color-neutral-200) 1px, transparent 1px) 0 0 / 100% 34px,
+      linear-gradient(90deg, var(--color-neutral-200) 1px, transparent 1px) 0 0 / 34px 100%,
+      var(--color-bg);
+  }
+  a { color: var(--color-accent-700); }
+  a:hover { color: var(--color-accent-800); }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    background:
+      linear-gradient(var(--color-neutral-200) 1px, transparent 1px) 0 0 / 100% 34px,
+      linear-gradient(90deg, var(--color-neutral-200) 1px, transparent 1px) 0 0 / 34px 100%,
+      var(--color-bg);
+  }
+  a { color: var(--color-accent-700); }
+  a:hover { color: var(--color-accent-800); }
+  img { max-width: 100%; }
+  @media (max-width: 860px) {
+    .split { grid-template-columns: 1fr !important; }
+    .split > * { border-right: 0 !important; }
+    .split-hero > div:first-child { border-bottom: 1px solid var(--color-divider); }
+  }
+  @media print { body { background: #fff; } }
+</style>
+</head>
+<body>
+<div style="max-width: 1180px; margin: 0 auto; background: var(--color-bg); border-left: 1px solid var(--color-divider); border-right: 1px solid var(--color-divider)">
+
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 28px; border-bottom: 1px solid var(--color-text); flex-wrap: wrap">
+    <div style="display: flex; align-items: center; gap: 14px">
+      <img src="assets/icon.png" alt="Parking NS" width="36" height="36" style="display: block; border: 1px solid var(--color-text)">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 700; font-size: 21px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1">Parking NS</div>
+        <div style="font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-600)">Novi Sad · SMS parking</div>
+      </div>
+    </div>
+    <nav style="display: flex; align-items: center; gap: 20px; font-family: var(--font-heading); font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase">
+      <a href="#how" style="text-decoration: none">01 Method</a>
+      <a href="#zones" style="text-decoration: none">02 Zones</a>
+      <a href="https://play.google.com/store/apps/details?id=com.bbosanac.parkingns" target="_blank" rel="noopener" class="btn btn-primary blueprint" style="text-decoration: none; letter-spacing: 0.1em"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Install</a>
+    </nav>
+  </header>
+
+  <div style="height: 14px; border-bottom: 1px solid var(--color-text); background: repeating-linear-gradient(45deg, var(--color-accent-900) 0 2px, transparent 2px 9px)"></div>
+
+  <section class="split split-hero" style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 0; border-bottom: 1px solid var(--color-text)">
+    <div style="padding: 40px 28px 34px; border-right: 1px solid var(--color-divider)">
+      <div style="display: flex; align-items: center; gap: 10px; font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-700)">
+        <span style="display: block; width: 26px; height: 1px; background: var(--color-accent-700)"></span>Sheet 01 · Android
+      </div>
+      <h1 style="font-family: var(--font-heading); font-weight: 700; font-size: clamp(46px, 7.4vw, 88px); line-height: 0.92; margin: 16px 0 0; text-transform: uppercase; letter-spacing: -0.01em">Pay for street<br>parking in<br>one tap</h1>
+      <div style="display: flex; align-items: center; gap: 0; margin: 26px 0 0; color: var(--color-neutral-600)">
+        <span style="width: 1px; height: 12px; background: currentColor"></span>
+        <span style="flex: 1; height: 1px; background: currentColor"></span>
+        <span style="font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; padding: 0 10px">8 zones · 4 digits · 1 SMS</span>
+        <span style="flex: 1; height: 1px; background: currentColor"></span>
+        <span style="width: 1px; height: 12px; background: currentColor"></span>
+      </div>
+      <p style="font-size: 19px; line-height: 1.5; max-width: 48ch; margin: 26px 0 0; color: var(--color-neutral-800); text-wrap: pretty">Select your zone, confirm your saved license plate, and send your parking SMS. Every Novi Sad zone, ticket type and SMS number sits on one screen.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px">
+        <a href="https://play.google.com/store/apps/details?id=com.bbosanac.parkingns" target="_blank" rel="noopener" class="btn btn-primary blueprint" style="text-decoration: none; font-size: 16px; padding: 14px 26px; letter-spacing: 0.08em; text-transform: uppercase"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Get it on Google Play</a>
+        <a href="#how" class="btn btn-secondary" style="text-decoration: none; font-size: 16px; padding: 14px 26px; letter-spacing: 0.08em; text-transform: uppercase">Read the method</a>
+      </div>
+    </div>
+    <div style="padding: 28px; display: flex; align-items: flex-start; justify-content: center; background: repeating-linear-gradient(45deg, var(--color-neutral-200) 0 1px, transparent 1px 11px)">
+      <div class="blueprint" style="position: relative; padding: 12px; width: 100%; max-width: 268px; background: var(--color-bg)">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="background: var(--color-neutral-900); border: 1px solid var(--color-text); border-radius: 20px; padding: 8px 6px; box-shadow: var(--shadow-sm)">
+          <div style="height: 12px; display: flex; align-items: center; justify-content: center">
+            <span style="width: 34px; height: 4px; border-radius: 2px; background: var(--color-neutral-700)"></span>
+          </div>
+          <img src="assets/screen-home.jpg" alt="Parking NS zone selection screen" style="display: block; width: 100%; height: auto; border-radius: 12px">
+          <div style="height: 14px; display: flex; align-items: center; justify-content: center">
+            <span style="width: 52px; height: 3px; border-radius: 2px; background: var(--color-neutral-700)"></span>
+          </div>
+        </div>
+        <div style="font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-neutral-600); padding-top: 10px; text-align: center">Fig. 1 — Main screen</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="border-bottom: 1px solid var(--color-text)">
+    <div style="display: flex; align-items: baseline; gap: 16px; padding: 22px 28px; border-bottom: 1px solid var(--color-divider)">
+      <span style="font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-700)">Sec. 01</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 34px; margin: 0; text-transform: uppercase; letter-spacing: 0.02em">Method of use</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr))">
+      <div style="padding: 28px; border-right: 1px solid var(--color-divider)">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px; letter-spacing: 0.1em; color: #fff; background: var(--color-accent-900); padding: 3px 9px">01</span>
+          <span style="flex: 1; height: 1px; background: var(--color-divider)"></span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 26px; margin: 14px 0 8px; text-transform: uppercase">Save your plate</h3>
+        <p style="margin: 0; line-height: 1.5; color: var(--color-neutral-800)">Add your vehicles once. Keep several plates and switch which one is selected in a tap.</p>
+      </div>
+      <div style="padding: 28px; border-right: 1px solid var(--color-divider)">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px; letter-spacing: 0.1em; color: #fff; background: var(--color-accent-900); padding: 3px 9px">02</span>
+          <span style="flex: 1; height: 1px; background: var(--color-divider)"></span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 26px; margin: 14px 0 8px; text-transform: uppercase">Pick your zone</h3>
+        <p style="margin: 0; line-height: 1.5; color: var(--color-neutral-800)">Extra, Red, Blue and White zones, plus daily tickets and seasonal locations, each with its SMS number and time limit.</p>
+      </div>
+      <div style="padding: 28px">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px; letter-spacing: 0.1em; color: #fff; background: var(--color-accent-900); padding: 3px 9px">03</span>
+          <span style="flex: 1; height: 1px; background: var(--color-divider)"></span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 26px; margin: 14px 0 8px; text-transform: uppercase">Send the SMS</h3>
+        <p style="margin: 0; line-height: 1.5; color: var(--color-neutral-800)">The app opens your messaging app with the plate and zone already filled in. Payment goes through your mobile operator — no card, no sign-up.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="zones" style="border-bottom: 1px solid var(--color-text)">
+    <div style="display: flex; align-items: baseline; gap: 16px; padding: 22px 28px; border-bottom: 1px solid var(--color-divider)">
+      <span style="font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-700)">Sec. 02</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 34px; margin: 0; text-transform: uppercase; letter-spacing: 0.02em">Zone schedule</h2>
+    </div>
+    <div class="split" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.5fr)">
+      <div style="padding: 28px; border-right: 1px solid var(--color-divider)">
+        <table class="table" style="font-variant-numeric: tabular-nums">
+          <thead>
+            <tr><th style="text-align: left">SMS</th><th style="text-align: left">Zone</th><th style="text-align: left">Limit</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>8210</td><td>Extra Zone</td><td>Maximum 60 min</td></tr>
+            <tr><td>8211</td><td>Red Zone</td><td>Maximum 120 min</td></tr>
+            <tr><td>8212</td><td>Blue Zone</td><td>No time limit</td></tr>
+            <tr><td>8218</td><td>White Zone</td><td>No time limit</td></tr>
+            <tr><td>8215</td><td>Daily Ticket</td><td>Valid until end of day</td></tr>
+            <tr><td>8214</td><td>Najlon</td><td>During market hours</td></tr>
+            <tr><td>8213</td><td>Štrand</td><td>During summer season</td></tr>
+            <tr><td>8288</td><td>Fair</td><td>During fair events</td></tr>
+          </tbody>
+        </table>
+        <div style="display: flex; gap: 12px; align-items: flex-start; margin-top: 24px; padding: 14px 16px; border: 1px solid var(--color-neutral-400); background: repeating-linear-gradient(45deg, var(--color-neutral-200) 0 1px, transparent 1px 10px)">
+          <span style="font-family: var(--font-heading); font-weight: 700; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent-900); white-space: nowrap">Notice</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: var(--color-neutral-800)">Zone numbers and rules are set by the city. Always check the official municipal parking signs where you park.</p>
+        </div>
+      </div>
+      <div style="padding: 28px; display: flex; justify-content: center; align-items: flex-start; background: repeating-linear-gradient(45deg, var(--color-neutral-200) 0 1px, transparent 1px 11px)">
+        <div class="blueprint" style="position: relative; padding: 12px; width: 100%; max-width: 236px; background: var(--color-bg)">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="background: var(--color-neutral-900); border: 1px solid var(--color-text); border-radius: 18px; padding: 8px 6px; box-shadow: var(--shadow-sm)">
+            <div style="height: 12px; display: flex; align-items: center; justify-content: center">
+              <span style="width: 30px; height: 4px; border-radius: 2px; background: var(--color-neutral-700)"></span>
+            </div>
+            <img src="assets/screen-vehicles.jpg" alt="Saved vehicles screen" style="display: block; width: 100%; height: auto; border-radius: 11px">
+            <div style="height: 14px; display: flex; align-items: center; justify-content: center">
+              <span style="width: 46px; height: 3px; border-radius: 2px; background: var(--color-neutral-700)"></span>
+            </div>
+          </div>
+          <div style="font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-neutral-600); padding-top: 10px; text-align: center">Fig. 2 — Vehicles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-bottom: 1px solid var(--color-text)">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr))">
+      <div style="padding: 26px 28px; border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider)">
+        <h3 style="font-family: var(--font-heading); font-size: 22px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em">Saved vehicles</h3>
+        <p style="margin: 0; line-height: 1.5; color: var(--color-neutral-800)">More than one car? Store each plate and pick the one you are parking.</p>
+      </div>
+      <div style="padding: 26px 28px; border-bottom: 1px solid var(--color-divider)">
+        <h3 style="font-family: var(--font-heading); font-size: 22px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em">Two languages</h3>
+        <p style="margin: 0; line-height: 1.5; color: var(--color-neutral-800)">Srpski and English, switched from the header at any time.</p>
+      </div>
+      <div style="padding: 26px 28px; border-right: 1px solid var(--color-divider)">
+        <h3 style="font-family: var(--font-heading); font-size: 22px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em">No sign-up</h3>
+        <p style="margin: 0; line-height: 1.5; color: var(--color-neutral-800)">No account and no card details. The SMS is charged by your operator.</p>
+      </div>
+      <div style="padding: 26px 28px">
+        <h3 style="font-family: var(--font-heading); font-size: 22px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em">One screen</h3>
+        <p style="margin: 0; line-height: 1.5; color: var(--color-neutral-800)">Zone, plate and SMS number together, so you are not looking anything up on the street.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 52px 28px; background: var(--color-accent-900); color: var(--color-neutral-100); border-bottom: 1px solid var(--color-text)">
+    <div style="display: flex; flex-wrap: wrap; gap: 28px; align-items: center; justify-content: space-between">
+      <div>
+        <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: clamp(32px, 4.4vw, 52px); margin: 0; text-transform: uppercase; color: #fff; line-height: 1">Free on Google Play</h2>
+        <p style="margin: 12px 0 0; max-width: 46ch; line-height: 1.5; color: var(--color-accent-200)">Android, Novi Sad zones only. Nothing to set up beyond your plate.</p>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.bbosanac.parkingns" target="_blank" rel="noopener" class="btn blueprint" style="text-decoration: none; font-size: 16px; padding: 15px 30px; letter-spacing: 0.08em; text-transform: uppercase; background: #fff; color: var(--color-accent-900); border-color: #fff"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Install the app</a>
+    </div>
+  </section>
+
+  <footer style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr))">
+    <div style="padding: 18px 28px; border-right: 1px solid var(--color-divider)">
+      <div style="font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-600)">Project</div>
+      <div style="font-family: var(--font-heading); font-size: 18px; text-transform: uppercase">Parking NS</div>
+    </div>
+    <div style="padding: 18px 28px; border-right: 1px solid var(--color-divider)">
+      <div style="font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-600)">Platform</div>
+      <div style="font-family: var(--font-heading); font-size: 18px; text-transform: uppercase">Android</div>
+    </div>
+    <div style="padding: 18px 28px; border-right: 1px solid var(--color-divider)">
+      <div style="font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-600)">Download</div>
+      <div style="font-family: var(--font-heading); font-size: 18px; text-transform: uppercase"><a href="https://play.google.com/store/apps/details?id=com.bbosanac.parkingns" target="_blank" rel="noopener">Google Play</a></div>
+    </div>
+    <div style="padding: 18px 28px">
+      <div style="font-family: var(--font-heading); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-600)">Terms &amp; contact</div>
+      <div style="font-family: var(--font-heading); font-size: 18px; text-transform: uppercase">In the app</div>
+    </div>
+  </footer>
+  <div style="padding: 14px 28px 30px; border-top: 1px solid var(--color-text); font-size: 14px; color: var(--color-neutral-700)">An independent app, not affiliated with the City of Novi Sad.</div>
+
+</div>
+</body>
+</html>
