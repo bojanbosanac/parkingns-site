@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parking Novi Sad — Terms &amp; Privacy</title>
+<meta name="description" content="Terms and Conditions and Privacy Policy for the Parking Novi Sad Android app.">
+<link rel="canonical" href="https://parkingns.bojanbosanac.com/privacy-policy.html">
+<meta name="theme-color" content="#0d63e8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parkingns.bojanbosanac.com/privacy-policy.html">
+<meta property="og:title" content="Parking Novi Sad — Terms &amp; Privacy">
+<meta property="og:description" content="Terms and Conditions and Privacy Policy for the Parking Novi Sad Android app.">
+<meta property="og:image" content="https://parkingns.bojanbosanac.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://parkingns.bojanbosanac.com/assets/og-image.png">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root {
+    --color-accent: #0d63e8;
+    --color-accent-100: #eaf1fe;
+    --color-accent-200: #cfe0fd;
+    --color-accent-300: #a6c6fb;
+    --color-accent-400: #6ba2f5;
+    --color-accent-500: #3a82ef;
+    --color-accent-600: #0b57cc;
+    --color-accent-700: #0b4fb8;
+    --color-accent-800: #0a3c8a;
+    --color-accent-900: #08295e;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    background:
+      linear-gradient(var(--color-neutral-200) 1px, transparent 1px) 0 0 / 100% 34px,
+      linear-gradient(90deg, var(--color-neutral-200) 1px, transparent 1px) 0 0 / 34px 100%,
+      var(--color-bg);
+  }
+  a { color: var(--color-accent-700); overflow-wrap: anywhere; }
+  a:hover { color: var(--color-accent-800); }
+  [hidden] { display: none !important; }
+
+  .sheet {
+    max-width: 1180px;
+    margin: 0 auto;
+    background: var(--color-bg);
+    border-left: 1px solid var(--color-divider);
+    border-right: 1px solid var(--color-divider);
+  }
+
+  /* — header (matches index.html) — */
+  .bar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 16px 28px; flex-wrap: wrap;
+    border-bottom: 1px solid var(--color-text);
+  }
+  .brand { display: flex; align-items: center; gap: 14px; color: inherit; text-decoration: none; }
+  .brand img { border: 1px solid var(--color-text); }
+  .brand-name {
+    font-family: var(--font-heading); font-weight: 700; font-size: 21px;
+    letter-spacing: 0.08em; text-transform: uppercase; line-height: 1;
+  }
+  .brand-sub {
+    font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--color-neutral-600);
+  }
+  .bar-nav { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .bar-nav > a {
+    font-family: var(--font-heading); font-size: 14px; letter-spacing: 0.14em;
+    text-transform: uppercase; text-decoration: none;
+  }
+  .langs { display: inline-flex; border: 1px solid var(--color-text); }
+  .langs button {
+    font-family: var(--font-heading); font-weight: 600; font-size: 14px;
+    letter-spacing: 0.12em; padding: 6px 12px; cursor: pointer;
+    border: 0; background: transparent; color: var(--color-text);
+  }
+  .langs button + button { border-left: 1px solid var(--color-text); }
+  .langs button:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+  .langs button[aria-pressed="true"] { background: var(--color-accent-900); color: #fff; }
+  .hatch {
+    height: 14px; border-bottom: 1px solid var(--color-text);
+    background: repeating-linear-gradient(45deg, var(--color-accent-900) 0 2px, transparent 2px 9px);
+  }
+
+  /* — title block — */
+  main > .eyebrow {
+    display: flex; align-items: center; gap: 10px;
+    margin: 0; padding: 40px 28px 0;
+    font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.24em;
+    text-transform: uppercase; color: var(--color-accent-700);
+  }
+  main > .eyebrow::before {
+    content: ""; display: block; width: 26px; height: 1px; background: currentColor;
+  }
+  main > h1 {
+    margin: 16px 0 0; padding: 0 28px;
+    font-family: var(--font-heading); font-weight: 700;
+    font-size: clamp(38px, 6vw, 68px); line-height: 0.95;
+    text-transform: uppercase; letter-spacing: -0.01em; max-width: 20ch;
+    text-wrap: balance;
+  }
+  main > .meta {
+    margin: 22px 0 0; padding: 0 28px;
+    font-family: var(--font-heading); font-size: 13px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--color-neutral-600);
+  }
+
+  /* — notice (same treatment as the index "Notice" strip) — */
+  .notice {
+    display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap;
+    margin: 32px 28px 40px; padding: 16px 18px;
+    border: 1px solid var(--color-text);
+    border-left: 6px solid var(--color-accent-900);
+    background: repeating-linear-gradient(45deg, var(--color-neutral-200) 0 1px, transparent 1px 10px);
+  }
+  .notice h2 {
+    margin: 0; flex: none;
+    font-family: var(--font-heading); font-weight: 700; font-size: 13px;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent-900);
+    line-height: 1.55;
+  }
+  .notice p {
+    margin: 0; flex: 1 1 36ch; font-size: 16px; font-weight: 500; line-height: 1.5;
+    color: var(--color-neutral-900);
+  }
+
+  /* — numbered sections — */
+  main > section { border-top: 1px solid var(--color-text); }
+  section > h2 {
+    display: flex; align-items: center; gap: 14px;
+    margin: 0; padding: 22px 28px;
+    border-bottom: 1px solid var(--color-divider);
+    font-family: var(--font-heading); font-weight: 700; font-size: clamp(24px, 3.4vw, 32px);
+    line-height: 1.1; text-transform: uppercase; letter-spacing: 0.02em;
+  }
+  .num {
+    flex: none;
+    font-family: var(--font-heading); font-weight: 700; font-size: 15px;
+    letter-spacing: 0.1em; color: #fff; background: var(--color-accent-900);
+    padding: 3px 9px; line-height: 1.3;
+  }
+  section > p, section > ul, section > blockquote {
+    max-width: 74ch; margin-left: 28px; margin-right: 28px;
+  }
+  section > p { margin-top: 0; margin-bottom: 14px; line-height: 1.6; color: var(--color-neutral-800); }
+  section > h2 + p, section > h2 + ul { margin-top: 24px; }
+  section > p:last-child, section > ul:last-child, section > blockquote:last-child { margin-bottom: 30px; }
+  section > ul { margin-top: 0; margin-bottom: 14px; padding: 0; list-style: none; }
+  section li {
+    position: relative; padding: 12px 0 12px 22px;
+    border-bottom: 1px solid var(--color-divider);
+    line-height: 1.6; color: var(--color-neutral-800);
+  }
+  section li:first-child { border-top: 1px solid var(--color-divider); }
+  section li::before {
+    content: ""; position: absolute; left: 2px; top: 22px;
+    width: 8px; height: 8px; background: var(--color-accent-900);
+  }
+  section strong { color: var(--color-text); font-weight: 600; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em;
+    padding: 1px 5px; background: var(--color-neutral-200); border: 1px solid var(--color-divider);
+  }
+  blockquote {
+    margin-top: 18px; margin-bottom: 14px; padding: 14px 18px;
+    border-left: 3px solid var(--color-accent-700);
+    background: var(--color-accent-100);
+    font-style: italic; line-height: 1.55; color: var(--color-neutral-800);
+  }
+
+  main > footer {
+    padding: 14px 28px 30px; border-top: 1px solid var(--color-text);
+    font-size: 14px; color: var(--color-neutral-700);
+  }
+
+  @media (max-width: 560px) {
+    .bar { padding: 14px 16px; }
+    main > .eyebrow { padding: 32px 16px 0; }
+    main > h1, main > .meta { padding: 0 16px; }
+    .notice { margin: 28px 16px 32px; }
+    section > h2 { padding: 18px 16px; }
+    section > p, section > ul, section > blockquote { margin-left: 16px; margin-right: 16px; }
+    main > footer { padding: 14px 16px 26px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .langs, .hatch { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header class="bar">
+  <a class="brand" href="./">
+    <img src="assets/icon.png" alt="Parking NS" width="36" height="36">
+    <div>
+      <div class="brand-name">Parking NS</div>
+      <div class="brand-sub">Novi Sad · SMS parking</div>
+    </div>
+  </a>
+  <nav class="bar-nav">
+    <a href="./">← Home</a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-set-lang="sr" aria-pressed="false">SR</button>
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="hr" aria-pressed="false">HR</button>
+    </div>
+  </nav>
+</header>
+
+<div class="hatch"></div>
+
+<!-- ───────────────────────────── ENGLISH ───────────────────────────── -->
+<main data-lang="en" lang="en">
+  <p class="eyebrow">Legal &amp; Privacy</p>
+  <h1>Terms and Conditions &amp; Privacy Policy</h1>
+  <p class="meta">Effective date: 22 September 2026 · App version 1.1.0</p>
+
+  <div class="notice" role="note">
+    <h2>Critical Notice</h2>
+    <p>The developer/provider is not responsible if any information in this app, including zone data and GPS-based distances, is incorrect, imprecise, or outdated. Always check the official parking signs on site before paying.</p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Acceptance of Terms</h2>
+    <p>By accessing or using the Parking Novi Sad app, you agree to be bound by these Terms and Conditions. These terms govern your use of the app for zone identification, payment via SMS, and parking duration management.</p>
+    <p>Parking Novi Sad is an independent app and is not operated by or affiliated with the city of Novi Sad or the municipal parking operator.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Payment &amp; Verification</h2>
+    <p>The app does not process payments itself. When you choose to pay, it opens your phone's SMS app with a pre-filled message; the payment is made by sending that SMS and is charged by your mobile operator. All payments made via SMS are final.</p>
+    <p>It is your sole responsibility to make sure the correct license plate number and zone are used. Any discrepancy between the app's data and the physical street signage is resolved in favor of the physical signage.</p>
+    <blockquote>"Confirmation of payment via the app does not exempt the user from compliance with temporary traffic measures or emergency parking suspensions."</blockquote>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Location &amp; Zone Distance</h2>
+    <p>With your permission, the app uses your device's location to show the approximate distance to nearby parking zones. Distance is measured in a straight line to the nearest mapped street segment of each zone and does not reflect actual walking or driving routes.</p>
+    <p>GPS accuracy depends on your device, signal strength, and surroundings. Tall buildings, narrow streets, underground garages, and indoor spaces can shift your reported position by tens of meters. Zone boundaries shown in the app are also only an approximation of the official ones.</p>
+    <p>Location access is optional. If you decline it, the app keeps working without showing distances.</p>
+    <blockquote>"The distance shown is for guidance only and does not confirm which zone you are in. Always check the official parking signs where you park before paying — they are the only authoritative source."</blockquote>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Privacy &amp; Data Protection</h2>
+    <p>The app has no user accounts and no backend server of its own. We do not collect or sell your personal data. The only third-party service that receives data from your device is Google AdMob, which shows ads in the app (see below).</p>
+    <ul>
+      <li><strong>Location</strong> — used only on your device, while the app is open, to calculate distances to parking zones. It is never stored or sent to us or anyone else. Location is provided by your phone's system location service (Google Play services).</li>
+      <li><strong>License plate numbers</strong> — saved only on your device so you don't have to retype them. They are passed to your SMS app only when you start a payment yourself.</li>
+      <li><strong>App preferences</strong> — such as whether you have accepted these terms, stored only on your device.</li>
+      <li><strong>Zone data</strong> — the app downloads public parking zone maps from GitHub (<code>raw.githubusercontent.com</code>). This request contains no personal data, but, as with any internet request, GitHub can see your IP address.</li>
+      <li><strong>Advertising</strong> — the app shows banner ads provided by Google AdMob. To serve and measure ads, Google may collect your device's advertising ID, IP address (which can indicate approximate location), device information, and how you interact with ads, and may use this to show personalized ads. The app does not share your GPS location or license plate numbers with AdMob. You can reset or delete your advertising ID, or opt out of personalized ads, in your device's Google settings. How Google uses data: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a></li>
+      <li><strong>Device backup</strong> — if Android backup is turned on for your Google account, data stored by the app (such as saved license plates) may be included in that backup, under Google's terms.</li>
+    </ul>
+    <p>The app contains no analytics or tracking of its own.</p>
+    <p><strong>Deleting your data:</strong> remove saved license plates in the app, or clear the app's storage or uninstall it from your device's settings.</p>
+    <p><strong>Children:</strong> the app is not directed at children under 13 and does not knowingly collect any data from them.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Changes &amp; Contact</h2>
+    <p>These terms may be updated from time to time. The latest version is always published on this page.</p>
+    <p>Questions? Contact Swiftocity doo Novi Sad (representative: Bojan Bosanac) at <a href="mailto:swiftocity@gmail.com">swiftocity@gmail.com</a> or <a href="mailto:bosanacbojan@gmail.com">bosanacbojan@gmail.com</a>.</p>
+  </section>
+
+  <footer>© 2026 Swiftocity doo Novi Sad</footer>
+</main>
+
+<!-- ───────────────────────────── SRPSKI ───────────────────────────── -->
+<main data-lang="sr" lang="sr-Latn" hidden>
+  <p class="eyebrow">Pravna obaveštenja i privatnost</p>
+  <h1>Uslovi korišćenja i politika privatnosti</h1>
+  <p class="meta">Datum stupanja na snagu: 22. septembar 2026. · Verzija aplikacije 1.1.0</p>
+
+  <div class="notice" role="note">
+    <h2>Važno obaveštenje</h2>
+    <p>Razvojni tim/provajder nije odgovoran ukoliko su informacije u ovoj aplikaciji, uključujući podatke o zonama i udaljenosti određene putem GPS-a, netačne, neprecizne ili zastarele. Pre plaćanja uvek proverite zvaničnu parking signalizaciju na licu mesta.</p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Prihvatanje uslova</h2>
+    <p>Pristupanjem ili korišćenjem aplikacije Parking Novi Sad, prihvatate da budete obavezani ovim Uslovima korišćenja. Ovi uslovi regulišu korišćenje aplikacije za identifikaciju zona, plaćanje putem SMS-a i upravljanje trajanjem parkiranja.</p>
+    <p>Parking Novi Sad je nezavisna aplikacija i nije povezana sa Gradom Novim Sadom niti sa gradskim parking servisom.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Plaćanje i provera</h2>
+    <p>Aplikacija sama ne obrađuje plaćanja. Kada izaberete plaćanje, otvara se SMS aplikacija na vašem telefonu sa unapred popunjenom porukom; plaćanje se vrši slanjem te poruke i naplaćuje ga vaš mobilni operater. Sva plaćanja izvršena putem SMS-a su konačna.</p>
+    <p>Isključiva je odgovornost korisnika da obezbedi tačan broj registarske tablice i ispravnu zonu. Svaka neusaglašenost između podataka u aplikaciji i fizičke saobraćajne signalizacije rešava se u korist fizičke signalizacije.</p>
+    <blockquote>„Potvrda plaćanja putem aplikacije ne oslobađa korisnika obaveze poštovanja privremenih saobraćajnih mera ili vanrednih obustava parkiranja.“</blockquote>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Lokacija i udaljenost do zona</h2>
+    <p>Uz vašu dozvolu, aplikacija koristi lokaciju uređaja kako bi prikazala približnu udaljenost do obližnjih parking zona. Udaljenost se meri vazdušnom linijom do najbližeg ucrtanog dela ulice u svakoj zoni i ne odgovara stvarnoj pešačkoj niti automobilskoj ruti.</p>
+    <p>Preciznost GPS-a zavisi od uređaja, jačine signala i okruženja. Visoke zgrade, uske ulice, podzemne garaže i zatvoreni prostori mogu pomeriti vašu prikazanu poziciju i za nekoliko desetina metara. Granice zona u aplikaciji su takođe samo približan prikaz zvaničnih granica.</p>
+    <p>Pristup lokaciji nije obavezan. Ako ga ne dozvolite, aplikacija nastavlja da radi bez prikaza udaljenosti.</p>
+    <blockquote>„Prikazana udaljenost služi isključivo kao orijentacija i ne potvrđuje u kojoj zoni se nalazite. Pre plaćanja uvek proverite zvaničnu parking signalizaciju na mestu parkiranja — ona je jedini merodavan izvor.“</blockquote>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Privatnost i zaštita podataka</h2>
+    <p>Aplikacija nema korisničke naloge niti sopstveni server. Ne prikupljamo i ne prodajemo vaše lične podatke. Jedina usluga treće strane koja prima podatke sa vašeg uređaja je Google AdMob, koji prikazuje reklame u aplikaciji (pogledajte ispod).</p>
+    <ul>
+      <li><strong>Lokacija</strong> — koristi se isključivo na vašem uređaju, dok je aplikacija otvorena, za izračunavanje udaljenosti do parking zona. Nikada se ne čuva niti šalje nama ili bilo kome drugom. Lokaciju obezbeđuje sistemski servis lokacije na telefonu (Google Play usluge).</li>
+      <li><strong>Brojevi registarskih tablica</strong> — čuvaju se samo na vašem uređaju kako ne biste morali ponovo da ih unosite. Prosleđuju se SMS aplikaciji isključivo kada sami pokrenete plaćanje.</li>
+      <li><strong>Podešavanja aplikacije</strong> — na primer, da li ste prihvatili ove uslove; čuvaju se samo na vašem uređaju.</li>
+      <li><strong>Podaci o zonama</strong> — aplikacija preuzima javne mape parking zona sa GitHub-a (<code>raw.githubusercontent.com</code>). Ovaj zahtev ne sadrži lične podatke, ali, kao i kod svakog zahteva na internetu, GitHub može videti vašu IP adresu.</li>
+      <li><strong>Reklame</strong> — aplikacija prikazuje banner reklame koje obezbeđuje Google AdMob. Radi prikazivanja i merenja reklama, Google može prikupljati reklamni ID vašeg uređaja, IP adresu (na osnovu koje se može odrediti približna lokacija), podatke o uređaju i vašu interakciju sa reklamama, i koristiti ih za prikaz personalizovanih reklama. Aplikacija ne deli vašu GPS lokaciju niti brojeve registarskih tablica sa AdMob-om. Reklamni ID možete resetovati ili obrisati, odnosno isključiti personalizovane reklame, u Google podešavanjima uređaja. Kako Google koristi podatke: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a></li>
+      <li><strong>Rezervna kopija uređaja</strong> — ako je Android rezervna kopija uključena za vaš Google nalog, podaci aplikacije (npr. sačuvane tablice) mogu biti uključeni u tu kopiju, u skladu sa Google-ovim uslovima.</li>
+    </ul>
+    <p>Aplikacija ne sadrži sopstvenu analitiku niti praćenje.</p>
+    <p><strong>Brisanje podataka:</strong> uklonite sačuvane tablice u aplikaciji, ili obrišite podatke aplikacije odnosno deinstalirajte je iz podešavanja uređaja.</p>
+    <p><strong>Deca:</strong> aplikacija nije namenjena deci mlađoj od 13 godina i svesno ne prikuplja nikakve podatke o njima.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Izmene i kontakt</h2>
+    <p>Ovi uslovi mogu povremeno biti izmenjeni. Najnovija verzija je uvek objavljena na ovoj stranici.</p>
+    <p>Pitanja? Kontaktirajte Swiftocity doo Novi Sad (zastupnik: Bojan Bosanac) na <a href="mailto:swiftocity@gmail.com">swiftocity@gmail.com</a> ili <a href="mailto:bosanacbojan@gmail.com">bosanacbojan@gmail.com</a>.</p>
+  </section>
+
+  <footer>© 2026 Swiftocity doo Novi Sad</footer>
+</main>
+
+<!-- ───────────────────────────── HRVATSKI ───────────────────────────── -->
+<main data-lang="hr" lang="hr" hidden>
+  <p class="eyebrow">Pravne napomene i privatnost</p>
+  <h1>Uvjeti korištenja i pravila privatnosti</h1>
+  <p class="meta">Datum stupanja na snagu: 22. rujna 2026. · Verzija aplikacije 1.1.0</p>
+
+  <div class="notice" role="note">
+    <h2>Važna obavijest</h2>
+    <p>Razvojni tim/pružatelj usluge nije odgovoran ukoliko su informacije u ovoj aplikaciji, uključujući podatke o zonama i udaljenosti određene putem GPS-a, netočne, neprecizne ili zastarjele. Prije plaćanja uvijek provjerite službenu parking signalizaciju na licu mjesta.</p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Prihvaćanje uvjeta</h2>
+    <p>Pristupanjem ili korištenjem aplikacije Parking Novi Sad, prihvaćate da ćete biti obvezani ovim Uvjetima korištenja. Ovi uvjeti uređuju korištenje aplikacije za identifikaciju zona, plaćanje putem SMS-a i upravljanje trajanjem parkiranja.</p>
+    <p>Parking Novi Sad je neovisna aplikacija i nije povezana s Gradom Novim Sadom niti s gradskim parking servisom.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Plaćanje i provjera</h2>
+    <p>Aplikacija sama ne obrađuje plaćanja. Kada odaberete plaćanje, otvara se SMS aplikacija na vašem telefonu s unaprijed ispunjenom porukom; plaćanje se vrši slanjem te poruke i naplaćuje ga vaš mobilni operater. Sva plaćanja izvršena putem SMS-a su konačna.</p>
+    <p>Isključiva je odgovornost korisnika osigurati točan broj registarske pločice i ispravnu zonu. Svaka nepodudarnost između podataka u aplikaciji i fizičke prometne signalizacije rješava se u korist fizičke signalizacije.</p>
+    <blockquote>„Potvrda plaćanja putem aplikacije ne oslobađa korisnika obveze poštivanja privremenih prometnih mjera ili izvanrednih obustava parkiranja.“</blockquote>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Lokacija i udaljenost do zona</h2>
+    <p>Uz vaše dopuštenje, aplikacija koristi lokaciju uređaja kako bi prikazala približnu udaljenost do obližnjih parking zona. Udaljenost se mjeri zračnom linijom do najbližeg ucrtanog dijela ulice u svakoj zoni i ne odgovara stvarnoj pješačkoj ni automobilskoj ruti.</p>
+    <p>Preciznost GPS-a ovisi o uređaju, jačini signala i okruženju. Visoke zgrade, uske ulice, podzemne garaže i zatvoreni prostori mogu pomaknuti vašu prikazanu poziciju i za nekoliko desetaka metara. Granice zona u aplikaciji također su samo približan prikaz službenih granica.</p>
+    <p>Pristup lokaciji nije obavezan. Ako ga ne dopustite, aplikacija nastavlja raditi bez prikaza udaljenosti.</p>
+    <blockquote>„Prikazana udaljenost služi isključivo kao orijentacija i ne potvrđuje u kojoj se zoni nalazite. Prije plaćanja uvijek provjerite službenu parking signalizaciju na mjestu parkiranja — ona je jedini mjerodavan izvor.“</blockquote>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Privatnost i zaštita podataka</h2>
+    <p>Aplikacija nema korisničke račune niti vlastiti poslužitelj. Ne prikupljamo i ne prodajemo vaše osobne podatke. Jedina usluga treće strane koja prima podatke s vašeg uređaja je Google AdMob, koji prikazuje oglase u aplikaciji (pogledajte niže).</p>
+    <ul>
+      <li><strong>Lokacija</strong> — koristi se isključivo na vašem uređaju, dok je aplikacija otvorena, za izračun udaljenosti do parking zona. Nikada se ne pohranjuje niti šalje nama ili bilo kome drugom. Lokaciju osigurava sistemska usluga lokacije na telefonu (Google Play usluge).</li>
+      <li><strong>Brojevi registarskih pločica</strong> — pohranjuju se samo na vašem uređaju kako ih ne biste morali ponovno upisivati. Prosljeđuju se SMS aplikaciji isključivo kada sami pokrenete plaćanje.</li>
+      <li><strong>Postavke aplikacije</strong> — na primjer, jeste li prihvatili ove uvjete; pohranjuju se samo na vašem uređaju.</li>
+      <li><strong>Podaci o zonama</strong> — aplikacija preuzima javne karte parking zona s GitHuba (<code>raw.githubusercontent.com</code>). Ovaj zahtjev ne sadrži osobne podatke, ali, kao i kod svakog zahtjeva na internetu, GitHub može vidjeti vašu IP adresu.</li>
+      <li><strong>Oglasi</strong> — aplikacija prikazuje banner oglase koje osigurava Google AdMob. Radi prikazivanja i mjerenja oglasa, Google može prikupljati oglasni ID vašeg uređaja, IP adresu (na temelju koje se može odrediti približna lokacija), podatke o uređaju i vašu interakciju s oglasima te ih koristiti za prikaz personaliziranih oglasa. Aplikacija ne dijeli vašu GPS lokaciju niti brojeve registarskih pločica s AdMobom. Oglasni ID možete poništiti ili izbrisati, odnosno isključiti personalizirane oglase, u Google postavkama uređaja. Kako Google koristi podatke: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a></li>
+      <li><strong>Sigurnosna kopija uređaja</strong> — ako je Android sigurnosna kopija uključena za vaš Google račun, podaci aplikacije (npr. spremljene pločice) mogu biti uključeni u tu kopiju, sukladno Googleovim uvjetima.</li>
+    </ul>
+    <p>Aplikacija ne sadrži vlastitu analitiku niti praćenje.</p>
+    <p><strong>Brisanje podataka:</strong> uklonite spremljene pločice u aplikaciji, ili izbrišite podatke aplikacije odnosno deinstalirajte je iz postavki uređaja.</p>
+    <p><strong>Djeca:</strong> aplikacija nije namijenjena djeci mlađoj od 13 godina i svjesno ne prikuplja nikakve podatke o njima.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Izmjene i kontakt</h2>
+    <p>Ovi uvjeti mogu se povremeno mijenjati. Najnovija verzija uvijek je objavljena na ovoj stranici.</p>
+    <p>Pitanja? Kontaktirajte Swiftocity doo Novi Sad (zastupnik: Bojan Bosanac) na <a href="mailto:swiftocity@gmail.com">swiftocity@gmail.com</a> ili <a href="mailto:bosanacbojan@gmail.com">bosanacbojan@gmail.com</a>.</p>
+  </section>
+
+  <footer>© 2026 Swiftocity doo Novi Sad</footer>
+</main>
+
+</div>
+
+<script>
+  (function () {
+    var supported = ["en", "sr", "hr"];
+    var titles = {
+      en: "Parking Novi Sad — Terms & Privacy",
+      sr: "Parking Novi Sad — Uslovi i privatnost",
+      hr: "Parking Novi Sad — Uvjeti i privatnost"
+    };
+
+    function pick() {
+      var fromHash = location.hash.replace("#", "");
+      if (supported.indexOf(fromHash) !== -1) return fromHash;
+      var nav = (navigator.language || "en").slice(0, 2).toLowerCase();
+      if (nav === "bs" || nav === "sh" || nav === "cnr") nav = "sr";
+      return supported.indexOf(nav) !== -1 ? nav : "en";
+    }
+
+    function apply(lang) {
+      document.querySelectorAll("main[data-lang]").forEach(function (el) {
+        el.hidden = el.getAttribute("data-lang") !== lang;
+      });
+      document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+        btn.setAttribute("aria-pressed", String(btn.getAttribute("data-set-lang") === lang));
+      });
+      document.documentElement.lang = lang === "sr" ? "sr-Latn" : lang;
+      document.title = titles[lang];
+    }
+
+    document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var lang = btn.getAttribute("data-set-lang");
+        history.replaceState(null, "", "#" + lang);
+        apply(lang);
+      });
+    });
+    window.addEventListener("hashchange", function () { apply(pick()); });
+    apply(pick());
+  })();
+</script>
+</body>
+</html>
