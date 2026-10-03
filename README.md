@@ -1,4 +1,4 @@
-# Parking NS — website
+# Parking Novi Sad — website
 
 Static site, no build step. Deploy on GitHub Pages:
 

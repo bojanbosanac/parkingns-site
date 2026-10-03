@@ -204,14 +204,14 @@
 
 <header class="bar">
   <a class="brand" href="./">
-    <img src="assets/icon.png" alt="Parking NS" width="36" height="36">
+    <img src="assets/icon.png" alt="Parking Novi Sad" width="36" height="36">
     <div>
-      <div class="brand-name">Parking NS</div>
+      <div class="brand-name">Parking Novi Sad</div>
       <div class="brand-sub">Novi Sad · SMS parking</div>
     </div>
   </a>
   <nav class="bar-nav">
-    <a href="./">← Home</a>
+    <a href="./" id="home-link">← Home</a>
     <div class="langs" role="group" aria-label="Language">
       <button type="button" data-set-lang="sr" aria-pressed="false">SR</button>
       <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
@@ -421,6 +421,9 @@
       });
       document.documentElement.lang = lang === "sr" ? "sr-Latn" : lang;
       document.title = titles[lang];
+      var home = document.getElementById("home-link");
+      home.href = lang === "en" ? "en/" : "./";
+      home.textContent = lang === "en" ? "← Home" : "← Početna";
     }
 
     document.querySelectorAll("[data-set-lang]").forEach(function (btn) {

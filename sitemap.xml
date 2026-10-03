@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://parkingns.bojanbosanac.com/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://parkingns.bojanbosanac.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://parkingns.bojanbosanac.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://parkingns.bojanbosanac.com/"/>
+  </url>
+  <url>
+    <loc>https://parkingns.bojanbosanac.com/en/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://parkingns.bojanbosanac.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://parkingns.bojanbosanac.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://parkingns.bojanbosanac.com/"/>
+  </url>
+  <url>
+    <loc>https://parkingns.bojanbosanac.com/privacy-policy.html</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+</urlset>
